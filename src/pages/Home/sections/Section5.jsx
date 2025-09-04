@@ -2,56 +2,41 @@
 const Section5 = () => {
   const schedule1 = [
     {
-      time: "10:00 - 11:00",
-      title: `Открытие «Кубка 
-      Мельниченко»`
+      time: "10:00 - 10:30",
+      title: "Сбор участников"
     },
     {
-      time: "10:00 - 18:00",
-      title: `Работа развлекательных 
-      зон для гостей`
+      time: "10:30 - 11:00",
+      title: "Церемония открытия"
     },
     {
-      time: "11:00 - 18:30",
-      title: "Отборочные матчи "
+      time: "11:00 - 13:55",
+      title: "Матчи группового этапа"
     },
     {
-      time: "12:30 - 13:00",
-      title: "Автограф-сессии"
-    },
-    {
-      time: "15:00 - 15:30",
-      title: "Автограф-сессии"
+      time: "13:55 - 15:20",
+      title: `Футбольные челленджи
+      со звездами`
     }
   ]
   const schedule2 = [
     {
-      time: "10:00 - 14:00",
-      title: "Отборочные матчи"
+      time: "10:00 - 12:05",
+      title: "Матчи группового этапа"
     },
     {
-      time: "13:00 - 17:00",
-      title: `Работа развлекательных 
-      зон для гостей`
+      time: "12:05 - 13:55",
+      title: `Плей-офф и челленджи
+      со звездами`
     },
     {
-      time: "14:00 - 15:00 ",
-      title: "Автограф-сессии"
+      time: "13:55 - 16:00",
+      title: "Финальные матчи"
     },
     {
-      time: "14:30 - 15:30",
-      title: `Полуфинал и Финал 
-      «Кубка Мельниченко»`
-    },
-    {
-      time: "15:45 - 16:15",
-      title: `Выставочный матч звезд 
-      РПЛ и медиа Лиги`
-    },
-    {
-      time: "16:30 - 17:00",
-      title: `Награждение победителей 
-      «Кубка Мельниченко»`
+      time: "16:00 - 16:30",
+      title: `Торжественная
+      церемония награждения`
     }
   ]
   return (
@@ -69,7 +54,7 @@ const Section5 = () => {
                 </div>
               ))
             }
-            <div className="text-[14px] sm:text-[24px] font-[700] font-actay py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-[-30px] left-[103px] sm:left-[175px] md:left-[285px] lg:left-[140px] xl:left-[178px]">14 декабря</div>
+            <div className="text-[14px] sm:text-[24px] font-[700] font-actay leading-[100%] py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-0 -translate-y-1/2 left-1/2 transform -translate-x-1/2">12 сентября</div>
           </div>
           <div className="border border-[#FF5200] pr-0 pl-[15px] sm:px-[32px] pt-[50px] lg:pt-[68px] pb-[10px] rounded-[20px] relative">
             {
@@ -80,7 +65,7 @@ const Section5 = () => {
                 </div>
               ))
             }
-            <div className="text-[14px] sm:text-[24px] font-[700] font-actay py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-[-30px] left-[103px] sm:left-[175px] md:left-[285px] lg:left-[140px] xl:left-[178px]">15 декабря</div>
+            <div className="text-[14px] sm:text-[24px] font-[700] font-actay leading-[100%] py-[10px] px-[34px] bg-[#FF5200] absolute rounded-[10px] top-0 -translate-y-1/2 left-1/2 transform -translate-x-1/2">13 сентября</div>
           </div>
         </div>
       </div>

@@ -5,13 +5,9 @@ import bodyDecor2 from "/images/body_decor_2.png"
 import guest1 from "/images/guest_1-1.png"
 import guest2 from "/images/guest_2-1.png"
 import guest3 from "/images/guest_3-1.png"
-import guest4 from "/images/guest_4-1.png"
-import guest5 from "/images/guest_10-1.png"
-import guest6 from "/images/guest_6-1.png"
-import guest7 from "/images/guest_7-1.png"
-import guest8 from "/images/guest_8-1.png"
-import guest9 from "/images/guest_9-1.png"
-import guest10 from "/images/guest_11-1.png"
+import guest4 from "/images/guest_6-1.png"
+import guest5 from "/images/guest_11_new.png"
+import guest6 from "/images/guest_7_new.png"
 const Section6 = () => {
   const data = [
     {
@@ -27,47 +23,24 @@ const Section6 = () => {
       img: guest3,
       name: `Артемий 
       Форзарезор`,
-    },
-    {
-      img: guest4,
-      name: "Федос"
-    },
-    {
-      img: guest5,
-      name: "Виктор Блатов"
     }
   ]
   const data2 = [
     {
-      img: guest10,
-      name: "Владимир Быстров",
+      img: guest4,
+      name: `Денис
+      Глушаков`,
+    },
+    {
+      img: guest5,
+      name: `Роман
+      Павлюченко`,
     },
     {
       img: guest6,
-      name: "Денис Глушаков",
-    },
-    {
-      img: guest7,
-      name: "Дмитрий Сычев",
-    },
-    {
-      img: guest8,
-      name: "Егор Титов"
-    },
-    {
-      img: guest9,
-      name: "Юрий Жирков",
+      name: `Павел
+      Погребняк`,
     }
-  ]
-  const data3 = [
-    {
-      img: guest8,
-      name: "Егор Титов"
-    },
-    {
-      img: guest9,
-      name: "Юрий Жирков",
-    },
   ]
   return (
     <>

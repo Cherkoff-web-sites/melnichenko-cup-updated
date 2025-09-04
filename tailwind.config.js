@@ -7,6 +7,7 @@ export default {
   theme: {
     fontFamily: {
       'sans': ['Inter', 'sans-serif'],
+      'inter': ['Inter', 'sans-serif'],
       'actay': ['Actay', 'sans-serif'],
     },
     screens: {
