@@ -30,7 +30,7 @@ const Section1 = () => {
 
   return (
     <>
-      <div className="h-[470px] sm:h-[680px] md:h-[734px] bg-section1 bg-cover pt-[52px] sm:pt-[70px] pb-[30px]" id="ticket">
+      <div className="h-[auto] bg-section1 bg-cover pt-[52px] sm:pt-[70px] pb-[30px]" id="ticket">
         <div className="container mx-auto">
           <div className="w-[323px] h-[199px] sm:w-[452px] sm:h-[280px] md:w-[500px] md:h-[310px] xl:w-[521px] xl:h-[321px] mb-[30px] sm:mb-0 truncate mx-auto">
             <img 
@@ -46,11 +46,11 @@ const Section1 = () => {
 
           <div className="mt-[40px] lg:mt-[84px] flex justify-between items-end flex-wrap">
             {/* Left */}
-            <div className="flex items-center gap-[20px]">
-              <div className="py-[13px] pl-[15px] pr-[15px] sm:pr-[90px] bg-[#11182181] rounded-[15px]">
+            <div className="flex items-center gap-[20px] flex-wrap">
+              <div className="py-[13px] pl-[15px] pr-[15px] md:pr-[90px] text-center md:text-left bg-[#11182181] rounded-[15px]">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">12-13 <br /> сентября</span>
               </div>
-              <a href="https://yandex.ru/maps/org/futbol_arena_yenisey/1250157435/?ll=92.983699%2C56.057639&z=16" target="_blank" className="w-[252px] sm:w-auto py-[13px] pl-[15px] pr-[15px] sm:pr-[100px] bg-[#11182181] rounded-[15px] relative">
+              <a href="https://yandex.ru/maps/org/futbol_arena_yenisey/1250157435/?ll=92.983699%2C56.057639&z=16" target="_blank" className="w-[calc(100%-110px)] md:w-auto py-[13px] pl-[15px] pr-[15px] sm:pr-[100px] text-center md:text-left bg-[#11182181] rounded-[15px] relative">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">Москва, <br /> Стадион “Москвич”</span>
                 <img 
                   src={arrow} 
@@ -59,7 +59,7 @@ const Section1 = () => {
                 />
               </a>
               {/* <a href="https://melnichencocup.ru" target="_blank" className="w-[252px] sm:w-auto py-[13px] pl-[15px] pr-[15px] sm:pr-[40px] bg-[#11182181] rounded-[15px] relative"> */}
-              <a href="https://melnichencocup.ru" target="_blank" className="w-[252px] sm:w-auto py-[12px] pl-[14px] pr-[14px] sm:pr-[39px] bg-transparent border border-white rounded-[15px] relative">
+              <a href="https://melnichencocup.ru" target="_blank" className="w-[100%] sm:w-auto py-[12px] pl-[14px] pr-[14px] sm:pr-[39px] bg-transparent border border-white text-center md:text-left rounded-[15px] relative">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">Студенческий<br /> Кубок Мельниченко</span>
                 <img 
                   src={arrow} 

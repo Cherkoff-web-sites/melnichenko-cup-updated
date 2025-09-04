@@ -55,7 +55,7 @@ const Section6 = () => {
         <div className="grid grid-cols-2 place-items-center sm:flex sm:justify-center sm:items-center sm:flex-wrap gap-[10px] sm:gap-[25px] mt-[30px]">
           {
             data.map((item, index) => (
-              <div className={"h-[245px] sm:h-[355px] " + (index === 4 ? "ml-[170px] sm:ml-0" : "")} key={index}>
+              <div className={"h-[245px] sm:h-[355px] " + (index === 2 ? "ml-[170px] sm:ml-0" : "")} key={index}>
                 <div className="w-[170px] sm:w-[220px] xl:w-[275px] h-[170px] sm:h-[220px] xl:h-[275px] truncate rounded-full">
                   <img src={item.img} alt="" className={"w-full h-full object-cover "}/>
                 </div>
@@ -73,7 +73,7 @@ const Section6 = () => {
         <div className="grid grid-cols-2 place-items-center sm:flex sm:justify-center sm:items-center sm:flex-wrap gap-[10px] sm:gap-[25px] mt-[30px]">
           {
             data2.map((item, index) => (
-              <div className={"h-[245px] sm:h-[355px] " + (index === 4 ? "ml-[170px] sm:ml-0" : "")} key={index}>
+              <div className={"h-[245px] sm:h-[355px] " + (index === 2 ? "ml-[170px] sm:ml-0" : "")} key={index}>
                 <div className="w-[170px] sm:w-[220px] xl:w-[275px] h-[170px] sm:h-[220px] xl:h-[275px] truncate rounded-full">
                   <img src={item.img} alt="" className={"w-full h-full object-cover "}/>
                 </div>

@@ -48,7 +48,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="h-[auto] pb-[85px] bg-footer bg-cover">
+      <div className="h-[auto] pb-[20px] md:pb-[85px] bg-footer bg-cover">
         <div className="container mx-auto pt-[35px] sm:pt-[40px]">
           <NavLink to='/'>
             <div className="w-[150px] md:w-[200px] lg:w-[230px] h-auto mx-auto">

@@ -35,12 +35,14 @@ const Section7 = () => {
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-[10px] sm:gap-[20px] mt-[20px] sm:mt-[40px]">
           {
             data.map((item, index) => (
-              <InfoBox 
-                key={index}
-                img={item.img}
-                title={item.title}
-                desc={item.desc}
-              />
+              <div key={index} className={index === 2 ? "col-span-2 lg:col-span-1" : ""}>
+                <InfoBox 
+                  img={item.img}
+                  title={item.title}
+                  desc={item.desc}
+                  customDescClass={index === 2 ? "w-full" : ""}
+                />
+              </div>
             ))
           }
         </div>
