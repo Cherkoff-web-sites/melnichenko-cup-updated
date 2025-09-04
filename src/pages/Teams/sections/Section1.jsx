@@ -189,79 +189,105 @@ const Section1 = () => {
       <div className="mt-[80px] sm:mt-[130px] mb-[90px] sm:mb-[150px]">
         <div className="text-[24px] sm:text-[48px] font-[700] font-actay mb-[30px] uppercase text-center">ПЛЕЙ-ОФФ</div>
         
-        {/* Турнирная сетка */}
-        {/* Первая строка */}
-        <div className="grid grid-cols-12 gap-[20px] sm:gap-[40px] mx-auto mb-[2px]">
-          {/* Первый раунд */}
-          <div className="col-span-4 space-y-[2px]">
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СГК-НОВОСИБИРСК</div>
+        <div className="relative">
+          {/* SVG элемент между колонками */}
+          <div className="absolute left-[calc(31%+3.45%+31%-3.88%)] top-1/2 transform -translate-y-1/2 z-0">
+            <svg width="174" height="368" viewBox="0 0 174 368" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 367H70C75.5228 367 80 362.523 80 357V11C80 5.47716 75.5228 1 70 1H0" stroke="#FF5200"/>
+              <path d="M80 185H139.546H174" stroke="#FF5200"/>
+            </svg>
+          </div>
+
+          {/* Турнирная сетка */}
+          {/* Первая строка */}
+          <div className="grid grid-cols-12 gap-[20px] sm:gap-[40px] mx-auto mb-[10px] md:mb-[30px] relative">
+            {/* SVG элемент между колонками */}
+            <div className="absolute left-[23.28%] top-1/2 transform -translate-y-1/2 z-0">
+              <svg width="174" height="186" viewBox="0 0 174 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 185H70C75.5228 185 80 180.523 80 175V11C80 5.47715 75.5228 1 70 1H0" stroke="#FF5200"/>
+                <path d="M80 94H139.546H174" stroke="#FF5200"/>
+              </svg>
             </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-УКК</div>
+            
+            {/* Первый раунд */}
+            <div className="col-span-4">
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] mb-[2px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СГК-НОВОСИБИРСК</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] mb-[10px] md:mb-[30px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-УКК</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] mb-[2px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ГОРНЯК</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СУЭК-КУЗБАСС</div>
+              </div>
             </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ГОРНЯК</div>
+
+            {/* Второй раунд */}
+            <div className="col-span-4 space-y-[2px] flex flex-col justify-center items-center">
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] text-center w-[100%] md:w-[75%]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СГК-НОВОСИБИРСК</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] text-center w-[100%] md:w-[75%]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ГОРНЯК</div>
+              </div>
             </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СУЭК-КУЗБАСС</div>
+
+            {/* Третий раунд (финал) */}
+            <div className="col-span-4 space-y-[2px] flex flex-col justify-end items-end">
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] relative bottom-[-4px] md:bottom-[-14px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СГК-НОВОСИБИРСК</div>
+              </div>
             </div>
           </div>
 
-          {/* Второй раунд */}
-          <div className="col-span-4 space-y-[2px] flex flex-col justify-center items-center">
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] text-center w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СГК-НОВОСИБИРСК</div>
+          {/* Вторая строка */}
+          <div className="grid grid-cols-12 gap-[20px] sm:gap-[40px] mx-auto relative">
+            {/* SVG элемент между колонками */}
+            <div className="absolute left-[23.28%] top-1/2 transform -translate-y-1/2 z-0">
+              <svg width="174" height="186" viewBox="0 0 174 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 185H70C75.5228 185 80 180.523 80 175V11C80 5.47715 75.5228 1 70 1H0" stroke="#FF5200"/>
+                <path d="M80 94H139.546H174" stroke="#FF5200"/>
+              </svg>
             </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] text-center w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ГОРНЯК</div>
+            
+            {/* Первый раунд (продолжение) */}
+            <div className="col-span-4">
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] mb-[2px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">НЕВИННОМЫССКИЙ АЗОТ</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] mb-[10px] md:mb-[30px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-КАЗАХСТАН</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] mb-[2px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">АЗОТ</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СУЭК-КРАСНОЯРСК</div>
+              </div>
             </div>
-          </div>
 
-          {/* Третий раунд (финал) */}
-          <div className="col-span-4 space-y-[2px] flex flex-col justify-end items-end">
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СГК-НОВОСИБИРСК</div>
+            {/* Второй раунд (продолжение) */}
+            <div className="col-span-4 space-y-[2px] flex flex-col justify-center items-center">
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-КАЗАХСТАН</div>
+              </div>
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СУЭК-КРАСНОЯРСК</div>
+              </div>
+            </div>
+
+            {/* Третий раунд (финал продолжение) */}
+            <div className="col-span-4 space-y-[2px] flex flex-col justify-start items-end">
+              <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[27px] w-[100%] md:w-[75%] relative top-[-4px] md:top-[-14px]">
+                <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-КАЗАХСТАН</div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Вторая строка */}
-        <div className="grid grid-cols-12 gap-[20px] sm:gap-[40px] mx-auto">
-          {/* Первый раунд (продолжение) */}
-          <div className="col-span-4 space-y-[2px]">
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">НЕВИННОМЫССКИЙ АЗОТ</div>
-            </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-КАЗАХСТАН</div>
-            </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">АЗОТ</div>
-            </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СУЭК-КРАСНОЯРСК</div>
-            </div>
-          </div>
-
-          {/* Второй раунд (продолжение) */}
-          <div className="col-span-4 space-y-[2px] flex flex-col justify-center items-center">
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-КАЗАХСТАН</div>
-            </div>
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">СУЭК-КРАСНОЯРСК</div>
-            </div>
-          </div>
-
-          {/* Третий раунд (финал продолжение) */}
-          <div className="col-span-4 space-y-[2px] flex flex-col justify-start items-end">
-            <div className="bg-[#4D6580] rounded-[10px] px-[5px] md:px-[15px] py-[10px] md:py-[20px] w-[100%] md:w-[75%]">
-              <div className="text-[12px] sm:text-[14px] font-[400] text-white text-center break-all">ЕВРОХИМ-КАЗАХСТАН</div>
-            </div>
-          </div>
-        </div>
-        
       </div>
     </>
   )
