@@ -9,12 +9,12 @@ const Section3 = () => {
           {/* Первая строка - две колонки */}
           <div className="flex justify-between items-center pt-[20px] md:pt-[72px] mb-[25px]">
             <div className="w-1/2 text-center">
-              <div className="font-actay text-[24px] md:text-[64px] font-[700] leading-[100%] uppercase italic">4 + 1</div>
-              <div className="font-actay text-[14px] md:text-[18px] font-[400] leading-[100%] uppercase">Полевых игрока</div>
+              <div className="font-actay text-[22px] md:text-[64px] font-[700] leading-[100%] uppercase italic">4 + 1</div>
+              <div className="font-actay text-[12px] md:text-[18px] font-[400] leading-[100%] uppercase">Полевых игрока</div>
             </div>
             <div className="w-1/2 text-center">
-              <div className="font-actay text-[24px] md:text-[64px] font-[700] leading-[100%] uppercase italic">7МИН</div>
-              <div className="font-actay text-[14px] md:text-[18px] font-[400] leading-[100%] uppercase">Время тайма</div>
+              <div className="font-actay text-[22px] md:text-[64px] font-[700] leading-[100%] uppercase italic">7МИН</div>
+              <div className="font-actay text-[12px] md:text-[18px] font-[400] leading-[100%] uppercase">Время тайма</div>
           </div>
         </div>
         
@@ -39,8 +39,8 @@ const Section3 = () => {
               <div className="font-actay text-[12px] md:text-[16px] font-[400] leading-[100%] uppercase">Категория участников</div>
             </div>
             <div className="w-[40%] md:w-1/2 text-center">
-              <div className="font-actay text-[24px] md:text-[64px] font-[700] leading-[100%] uppercase italic">5X5</div>
-              <div className="font-actay text-[14px] md:text-[18px] font-[400] leading-[100%] uppercase">Формат игры</div>
+              <div className="font-actay text-[22px] md:text-[64px] font-[700] leading-[100%] uppercase italic">5X5</div>
+              <div className="font-actay text-[12px] md:text-[18px] font-[400] leading-[100%] uppercase">Формат игры</div>
             </div>
           </div>
 

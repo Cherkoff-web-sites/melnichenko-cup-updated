@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import cup from "/images/cup.png"
 import arrow from "/images/arrow.svg"
-import circle1 from "/images/circle_1.png"
-import circle2 from "/images/circle_2.png"
-import circle3 from "/images/circle_3.png"
+import circle1 from "/images/who_is_it.png"
+import circle2 from "/images/who_is_it.png"
+import circle3 from "/images/who_is_it.png"
 import circle4 from "/images/circle_4.png"
 import circle5 from "/images/circle_5.png"
 import { FaPlus } from "react-icons/fa";
@@ -46,11 +46,11 @@ const Section1 = () => {
 
           <div className="mt-[40px] lg:mt-[84px] flex justify-between items-end flex-wrap">
             {/* Left */}
-            <div className="flex items-center gap-[20px] flex-wrap">
+            <div className="flex items-center gap-[20px] flex-wrap justify-between md:justify-start">
               <div className="py-[13px] pl-[15px] pr-[15px] md:pr-[90px] text-center md:text-left bg-[#11182181] rounded-[15px]">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">12-13 <br /> сентября</span>
               </div>
-              <a href="https://yandex.ru/maps/org/futbol_arena_yenisey/1250157435/?ll=92.983699%2C56.057639&z=16" target="_blank" className="w-[calc(100%-110px)] md:w-auto py-[13px] pl-[15px] pr-[15px] sm:pr-[100px] text-center md:text-left bg-[#11182181] rounded-[15px] relative">
+              <a href="https://yandex.ru/maps/org/futbol_arena_yenisey/1250157435/?ll=92.983699%2C56.057639&z=16" target="_blank" className="w-[calc(100%-120px)] md:w-auto py-[13px] pl-[15px] pr-[15px] sm:pr-[100px] text-center md:text-left bg-[#11182181] rounded-[15px] relative">
                 <span className="text-[11px] md:text-[18px] font-[700] font-actay">Москва, <br /> Стадион “Москвич”</span>
                 <img 
                   src={arrow} 
@@ -70,11 +70,11 @@ const Section1 = () => {
             </div>
 
             {/* Right */}
-            <div className="mt-[8px] md:mt-0 ml-auto md:ml-0 flex items-center gap-[8px] sm:block">
+            <div className="mt-[16px] md:mt-0 ml-auto md:ml-0 flex items-center gap-[8px] sm:block">
               <div className="text-[14px] md:text-[20px] font-[400] mb-0 sm:mb-[5px]">приглашенные гости</div>
               <div className="flex items-center">
                 <div className="w-[34px] sm:w-[50px] md:w-[66px] h-[34px] sm:h-[50px] md:h-[66px] rounded-full bg-[#FF5200] inline-flex items-center justify-center text-[20px] sm:text-[50px] relative z-[6]">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-[15px] sm:w-[30px] h-auto" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="15" x2="30" y2="15" stroke="white" stroke-width="2"/>
                     <line x1="15" y1="30" x2="15" stroke="white" stroke-width="2"/>
                   </svg>

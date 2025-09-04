@@ -12,32 +12,32 @@ const Section1 = () => {
     {
       groupName: "ГРУППА А",
       teams: [
-        { position: 1, team: "СГК-НОВОСИБИРСК", wins: 4, draws: 1, losses: 0, goalDiff: "+8", points: 13 },
-        { position: 2, team: "ЕВРОХИМ-УКК", wins: 3, draws: 2, losses: 0, goalDiff: "+5", points: 11 },
-        { position: 3, team: "ГОРНЯК", wins: 2, draws: 1, losses: 2, goalDiff: "+2", points: 7 },
-        { position: 4, team: "СУЭК-КУЗБАСС", wins: 1, draws: 1, losses: 3, goalDiff: "-3", points: 4 },
-        { position: 5, team: "НЕВИННОМЫССКИЙ АЗОТ", wins: 0, draws: 1, losses: 4, goalDiff: "-12", points: 1 }
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""}
       ]
     },
     {
       groupName: "ГРУППА Б",
       teams: [
-        { position: 1, team: "СГК-КУЗБАСС", wins: 4, draws: 0, losses: 1, goalDiff: "+6", points: 12 },
-        { position: 2, team: "ЕВРОХИМ-КАЗАХСТАН", wins: 3, draws: 1, losses: 1, goalDiff: "+4", points: 10 },
-        { position: 3, team: "АЗОТ", wins: 2, draws: 2, losses: 1, goalDiff: "+1", points: 8 },
-        { position: 4, team: "СУЭК-КРАСНОЯРСК", wins: 1, draws: 1, losses: 3, goalDiff: "-4", points: 4 },
-        { position: 5, team: "АИММ И ЦТИП", wins: 0, draws: 0, losses: 5, goalDiff: "-7", points: 0 }
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""},
+        { position: "", team: "", wins: "", draws: "", losses: "", goalDiff: "", points: ""}
       ]
     }
   ]
 
   // Данные для таблицы "Лучшие бомбардиры"
   const topScorers = [
-    { player: "Александр Петров", team: "СГК-НОВОСИБИРСК", goals: 8 },
-    { player: "Дмитрий Козлов", team: "ЕВРОХИМ-УКК", goals: 7 },
-    { player: "Михаил Волков", team: "ГОРНЯК", goals: 6 },
-    { player: "Сергей Морозов", team: "СУЭК-КУЗБАСС", goals: 5 },
-    { player: "Андрей Соколов", team: "НЕВИННОМЫССКИЙ АЗОТ", goals: 4 }
+    { player: "", team: "", goals: "" },
+    { player: "", team: "", goals: "" },
+    { player: "", team: "", goals: "" },
+    { player: "", team: "", goals: "" },
+    { player: "", team: "", goals: "" }
   ]
   return (
     <>
