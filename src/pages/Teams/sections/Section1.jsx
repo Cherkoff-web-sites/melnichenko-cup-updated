@@ -73,6 +73,7 @@ const Section1 = () => {
             img={decor2}
             checkImg={true}
             mobileStyle={true}
+            customFontSize={true}
           />
           <TeamInfoType2 
             title={`АО "НАК "Азот"`}

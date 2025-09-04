@@ -10,10 +10,13 @@ const TeamInfoType2 = (props) => {
     mobileImg = null,
     mobileCheckImg = false,
     mobileStyle = false,
-    desktopStyle = false
+    desktopStyle = false,
+    customFontSize = false
   } = props;
 
-  const css = check ? "text-[10px] sm:text-[19px] xl:text-[22px] font-[700] font-actay absolute bottom-[10px] sm:bottom-[14px]" : "text-[11px] sm:text-[19px] xl:text-[22px] font-[700] font-actay";
+  const css = check ? 
+    (customFontSize ? "text-[10px] sm:text-[19px] xl:text-[21px] font-[700] font-actay absolute bottom-[10px] sm:bottom-[14px]" : "text-[10px] sm:text-[19px] xl:text-[22px] font-[700] font-actay absolute bottom-[10px] sm:bottom-[14px]") :
+    (customFontSize ? "text-[11px] sm:text-[19px] xl:text-[21px] font-[700] font-actay" : "text-[11px] sm:text-[19px] xl:text-[22px] font-[700] font-actay");
   const cssImg = checkImg ? "w-[58px] h-[58px] sm:w-[82px] sm:h-[82px] absolute bottom-[5px] right-[10px]" : "w-[58px] h-[58px] sm:w-[82px] sm:h-[82px] absolute top-0 right-[10px]";
   
   // Условные стили для карточки
