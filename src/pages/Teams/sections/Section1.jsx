@@ -44,7 +44,7 @@ const Section1 = () => {
       <div className="mt-[40px] sm:mt-[73px] mb-[90px] sm:mb-[130px] relative z-[2]">
         <div className="text-[24px] sm:text-[48px] font-[700] font-actay uppercase text-center mb-[30px]">Команды участников</div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] md:gap-[20px]">
           <TeamInfoType1 
             title={"АО \"Ковдорский ГОК\""}
             team={"ГОРНЯК"}
@@ -52,6 +52,7 @@ const Section1 = () => {
           <TeamInfoType2 
             title="Еврохим-УКК"
             team="ЕВРОХИМ-УКК"
+            mobileImg={decor1}
           />
           <TeamInfoType2 
             title="АО СГК-Новосибирск"
@@ -71,6 +72,7 @@ const Section1 = () => {
             team="НЕВИННОМЫССКИЙ АЗОТ"
             img={decor2}
             checkImg={true}
+            mobileStyle={true}
           />
           <TeamInfoType2 
             title={`АО "НАК "Азот"`}
@@ -79,16 +81,22 @@ const Section1 = () => {
           <TeamInfoType1 
             title={`АО "СУЭК-Красноярск"`}
             team="СУЭК-КРАСНОЯРСК"
+            desktopStyle={true}
+            mobileImg={decor3}
+            mobileCheckImg={true}
           />
           <TeamInfoType2 
             title={`АО "СУЭК-Кузбасс"`}
             team="СУЭК-КУЗБАСС"
             img={decor3}
             checkImg={true}
+            mobileImg={decor2}
+            mobileCheckImg={true}
           />
           <TeamInfoType1 
             title={"АИММ и ЦТИП"}
             team={"АИММ И ЦТИП"}
+            desktopStyle={true}
           />
         </div>
         <Link to='/'>
