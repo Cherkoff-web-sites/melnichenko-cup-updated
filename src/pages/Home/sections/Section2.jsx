@@ -31,7 +31,7 @@ const Section2 = () => {
     <>
       <div className="mt-[80px] sm:mt-[90px] lg:mt-[130px]" id="program">
         <div className="text-center text-[23px] sm:text-[40px] md:text-[48px] font-[700] font-actay uppercase">Программа фестиваля</div>
-        <div className="w-[310px] sm:w-full max-w-[845px] mx-auto sm:block text-center text-[14px] md:text-[24px] font-[400] mt-[10px] sm:mt-[8px]"><b>"Кубок Мельниченко"</b> — это командное спортивное соревнование для сотрудников предприятий СУЭК/СГК и их семей</div>
+        <div className="w-[310px] sm:w-full max-w-[845px] mx-auto sm:block text-center text-[14px] md:text-[24px] font-[400] mt-[10px] sm:mt-[8px]"><b>"Кубок Мельниченко"</b> — Это соревнование для сотрудников компаний СУЭК, СГК, ЕвроХим, ГРК, АИМ и ЦТиП</div>
 
         <div className="mt-[20px] sm:mt-[33px] grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
           <div>

@@ -2,9 +2,8 @@
 import temp from "/images/circle_1.png"
 import bodyDecor1 from "/images/body_decor_1.png"
 import bodyDecor2 from "/images/body_decor_2.png"
-import guest1 from "/images/who_is_it.png"
-import guest2 from "/images/who_is_it.png"
-import guest3 from "/images/who_is_it.png"
+import guest1 from "/images/guest_1_new.png"
+import guest2 from "/images/guest_2_new.png"
 import guest4 from "/images/guest_6-1.png"
 import guest5 from "/images/guest_11_new.png"
 import guest6 from "/images/guest_7_new.png"
@@ -12,15 +11,12 @@ const Section6 = () => {
   const data = [
     {
       img: guest1,
-      name: "",
+      name: "ЭД",
     },
     {
       img: guest2,
-      name: ""
-    },
-    {
-      img: guest3,
-      name: "",
+      name: `Богдан
+      Тимошенко`
     }
   ]
   const data2 = [
