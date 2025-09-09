@@ -7,6 +7,7 @@ import guest2 from "/images/guest_2_new.png"
 import guest4 from "/images/guest_6-1.png"
 import guest5 from "/images/guest_11_new.png"
 import guest6 from "/images/guest_7_new.png"
+import guest7 from "/images/guest_12_new.png"
 const Section6 = () => {
   const data = [
     {
@@ -34,6 +35,11 @@ const Section6 = () => {
       img: guest6,
       name: `Павел
       Погребняк`,
+    },
+    {
+      img: guest7,
+      name: `Игорь
+      Семшов`,
     }
   ]
   return (
@@ -64,10 +70,10 @@ const Section6 = () => {
         </div>
 
         {/* 2 row */}
-        <div className="grid grid-cols-2 place-items-center sm:flex sm:justify-center sm:items-center sm:flex-wrap gap-[10px] sm:gap-[25px] mt-[30px]">
+        <div className="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-[10px] sm:gap-[25px] mt-[30px]">
           {
             data2.map((item, index) => (
-              <div className={"h-[245px] sm:h-[355px] " + (index === 2 ? "ml-[170px] sm:ml-0" : "")} key={index}>
+              <div className="h-[245px] sm:h-[355px]" key={index}>
                 <div className="w-[170px] sm:w-[220px] xl:w-[275px] h-[170px] sm:h-[220px] xl:h-[275px] truncate rounded-full">
                   <img src={item.img} alt="" className={"w-full h-full object-cover "}/>
                 </div>

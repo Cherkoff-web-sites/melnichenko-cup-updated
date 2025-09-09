@@ -102,48 +102,46 @@ const Section1 = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] md:gap-[20px]">
           <TeamInfoType1 
-            title={"АО \"Ковдорский ГОК\""}
-            team={"ГОРНЯК"}
+            city="г. Ковдор"
+            team="Ковдорский ГОК"
           />
           <TeamInfoType2 
-            title="Еврохим-УКК"
+            city="г. Березники"
             team="ЕВРОХИМ-УКК"
             mobileImg={decor1}
           />
           <TeamInfoType2 
-            title="АО СГК-Новосибирск"
+            city="г. Новосибирск"
             team="СГК-НОВОСИБИРСК"
             img={decor1}
           />
           <TeamInfoType2 
-            title={`АО "Кузбассэнерго"`}
+            city="г. Кемерово"
             team="СГК-КУЗБАСС"
           />
           <TeamInfoType2 
-            title={`ТОО "ЕвроХим - Каратау"`}
+            city="г. Алматы"
             team="ЕВРОХИМ-КАЗАХСТАН"
           />
           <TeamInfoType2 
-            title={`АО "Невинномысский Азот"`}
+            city="г. Невинномысск"
             team="НЕВИННОМЫССКИЙ АЗОТ"
             img={decor2}
             checkImg={true}
-            mobileStyle={true}
             customFontSize={true}
           />
           <TeamInfoType2 
-            title={`АО "НАК "Азот"`}
-            team="АЗОТ"
+            city="г. Новомосковск"
+            team="НАК АЗОТ"
           />
           <TeamInfoType1 
-            title={`АО "СУЭК-Красноярск"`}
+            city="г. Красноярск"
             team="СУЭК-КРАСНОЯРСК"
-            desktopStyle={true}
             mobileImg={decor3}
             mobileCheckImg={true}
           />
           <TeamInfoType2 
-            title={`АО "СУЭК-Кузбасс"`}
+            city="г. Ленинск-Кузнецк"
             team="СУЭК-КУЗБАСС"
             img={decor3}
             checkImg={true}
@@ -151,9 +149,8 @@ const Section1 = () => {
             mobileCheckImg={true}
           />
           <TeamInfoType1 
-            title={"АИММ и ЦТИП"}
-            team={"АИММ И ЦТИП"}
-            desktopStyle={true}
+            city="г. Москва"
+            team="АИММ И ЦТИП"
           />
         </div>
         <Link to='/'>

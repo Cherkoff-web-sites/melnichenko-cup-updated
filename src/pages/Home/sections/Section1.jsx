@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import cup from "/images/cup.png"
 import arrow from "/images/arrow.svg"
-import circle1 from "/images/who_is_it.png"
-import circle2 from "/images/who_is_it.png"
-import circle3 from "/images/who_is_it.png"
-import circle4 from "/images/circle_4.png"
+import circle1 from "/images/circle_1.png"
+import circle2 from "/images/circle_2_new.png"
+import circle3 from "/images/circle_3_new.png"
+import circle4 from "/images/circle_4_new.png"
 import circle5 from "/images/circle_5.png"
 import { FaPlus } from "react-icons/fa";
 
@@ -93,6 +93,11 @@ const Section1 = () => {
                   className="w-[34px] sm:w-[50px] md:w-[66px] h-[34px] sm:h-[50px] md:h-[66px] border-[2px] border-[#FF5200] rounded-full truncate ml-[-10px] md:ml-[-15px] relative z-[3]" 
                 >
                   <img src={circle3} alt="" className="w-full h-full object-cover"/>
+                </div>
+                <div 
+                  className="w-[34px] sm:w-[50px] md:w-[66px] h-[34px] sm:h-[50px] md:h-[66px] border-[2px] border-[#FF5200] rounded-full truncate ml-[-10px] md:ml-[-15px] relative z-[2]" 
+                >
+                  <img src={circle4} alt="" className="w-full h-full object-cover"/>
                 </div>
               </div>
             </div>
