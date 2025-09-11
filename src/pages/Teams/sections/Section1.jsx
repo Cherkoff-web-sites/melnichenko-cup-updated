@@ -346,7 +346,7 @@ const Section1 = () => {
         
         {/* Таблица расписания */}
         <div className="overflow-x-auto">
-          <div className="space-y-[2px] min-w-[600px] md:min-w-0">
+          <div className="space-y-[2px] min-w-[608px] md:min-w-0">
             {/* Строка 1 - Заголовок таблицы */}
             <div className="grid grid-cols-5 gap-[2px] w-full">
               <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[12px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">РАСПИСАНИЕ</div>
