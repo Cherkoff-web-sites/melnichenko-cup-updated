@@ -40,6 +40,62 @@ const Section1 = () => {
     { player: "", team: "", goals: "" }
   ]
 
+  // Данные для расписания по полям
+  const scheduleData = {
+    day1: {
+      date: "12.09.2020",
+      matches1: [
+        { time: "11:00", team1: "", team2: "" },
+        { time: "11:25", team1: "", team2: "" },
+        { time: "11:50", team1: "", team2: "" },
+        { time: "12:15", team1: "", team2: "" },
+        { time: "12:40", team1: "", team2: "" },
+        { time: "13:05", team1: "", team2: "" },
+        { time: "13:30", team1: "", team2: "" }
+      ],
+      matches2: [
+        { time: "11:00", team1: "", team2: "" },
+        { time: "11:25", team1: "", team2: "" },
+        { time: "11:50", team1: "", team2: "" },
+        { time: "12:15", team1: "", team2: "" },
+        { time: "12:40", team1: "", team2: "" },
+        { time: "13:05", team1: "", team2: "" },
+        { time: "13:30", team1: "", team2: "" }
+      ]
+    },
+    day2: {
+      date: "13.09.2025",
+      matches1: [
+        { time: "10:00", team1: "", team2: "" },
+        { time: "10:25", team1: "", team2: "" },
+        { time: "10:50", team1: "", team2: "" },
+        { time: "11:15", team1: "", team2: "" },
+        { time: "11:40", team1: "", team2: "" }
+      ],
+      matches2: [
+        { time: "10:00", team1: "", team2: "" },
+        { time: "10:25", team1: "", team2: "" },
+        { time: "10:50", team1: "", team2: "" },
+        { time: "11:15", team1: "", team2: "" },
+        { time: "11:40", team1: "", team2: "" }
+      ]
+    },
+    special: {
+      thirdPlace: { 
+        time: "14:25", 
+        team1: "МАТЧ ЗА ТРЕТЬЕ МЕСТО",
+        team2: "", 
+        team3: ""
+      },
+      final: { 
+        time: "15:25", 
+        team1: "ФИНАЛ",
+        team2: "", 
+        team3: ""
+      }
+    }
+  }
+
   // Данные для плей-оффа
   const playoffData = [
     {
@@ -281,6 +337,75 @@ const Section1 = () => {
               ))}
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Секция "Расписание по полям" */}
+      <div className="mt-[80px] sm:mt-[130px] mb-[90px] sm:mb-[150px]">
+        <div className="text-[24px] sm:text-[48px] font-[700] font-actay mb-[30px] uppercase text-center">РАССПИСАНИЕ ПО ПОЛЯМ</div>
+        
+        {/* Таблица расписания */}
+        <div className="overflow-x-auto">
+          <div className="space-y-[2px] min-w-[600px] md:min-w-0">
+            {/* Строка 1 - Заголовок таблицы */}
+            <div className="grid grid-cols-5 gap-[2px] w-full">
+              <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[12px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">РАСПИСАНИЕ</div>
+              <div className="col-span-2 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[12px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">ПОЛЕ №1</div>
+              <div className="col-span-2 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[12px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">ПОЛЕ №2</div>
+            </div>
+
+            {/* Строка 2 - Дата 12.09.2020 */}
+            <div className="grid grid-cols-5 gap-[2px] w-full">
+              <div className="col-span-5 flex items-center justify-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#FF5200] rounded-[10px] text-[12px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-black text-center">
+                {scheduleData.day1.date}
+              </div>
+            </div>
+
+            {/* Строки 3-9 - Временные слоты для 12.09.2020 */}
+            {scheduleData.day1.matches1.map((match, index) => (
+              <div key={index} className="grid grid-cols-5 gap-[2px] w-full">
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{match.time}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{match.team1}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{match.team2}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.day1.matches2[index].team1}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.day1.matches2[index].team2}</div>
+              </div>
+            ))}
+
+            {/* Строка 10 - Дата 13.09.2025 */}
+            <div className="grid grid-cols-5 gap-[2px] w-full">
+              <div className="col-span-5 flex items-center justify-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#FF5200] rounded-[10px] text-[12px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-black text-center">
+                {scheduleData.day2.date}
+              </div>
+            </div>
+
+            {/* Строки 11-15 - Временные слоты для 13.09.2025 */}
+            {scheduleData.day2.matches1.map((match, index) => (
+              <div key={index} className="grid grid-cols-5 gap-[2px] w-full">
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{match.time}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{match.team1}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{match.team2}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.day2.matches2[index].team1}</div>
+                <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.day2.matches2[index].team2}</div>
+              </div>
+            ))}
+
+            {/* Строка 16 - Матч за третье место */}
+            <div className="grid grid-cols-5 gap-[2px] w-full">
+              <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.thirdPlace.time}</div>
+              <div className="col-span-2 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.thirdPlace.team1}</div>
+              <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.thirdPlace.team2}</div>
+              <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.thirdPlace.team3}</div>
+            </div>
+
+            {/* Строка 17 - Финал */}
+            <div className="grid grid-cols-5 gap-[2px] w-full">
+              <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.final.time}</div>
+              <div className="col-span-2 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.final.team1}</div>
+              <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.final.team2}</div>
+              <div className="col-span-1 flex justify-center items-center h-[50px] md:h-[60px] min-w-[120px] md:min-w-0 bg-[#4D6580] rounded-[10px] text-[11px] sm:text-[16px] md:text-[20px] font-[700] font-actay text-white text-center">{scheduleData.special.final.team3}</div>
+            </div>
+          </div>
         </div>
       </div>
     </>
