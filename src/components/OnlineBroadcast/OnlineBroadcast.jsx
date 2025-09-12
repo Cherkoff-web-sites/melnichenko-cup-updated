@@ -54,7 +54,7 @@ const OnlineBroadcast = () => {
         </div>
 
         <iframe
-          src="https://vk.com/video_ext.php?oid=-228510684&id=456239030&hd=2"
+          src="https://vkvideo.ru/video_ext.php?oid=-228510684&id=456239280&autoplay=1"
           width={widthForVideo}
           height={height}
           allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
@@ -64,7 +64,7 @@ const OnlineBroadcast = () => {
             borderRadius: "20px",
           }}
         ></iframe>
-        
+
         <div className="text-[14px] w-[300px] sm:w-full sm:text-[32px] font-[700] font-actay text-center mt-[20px] sm:mt-[50px] mx-auto sm:mx-0">
           Подписывайтесь на нас в социальных сетях
         </div>

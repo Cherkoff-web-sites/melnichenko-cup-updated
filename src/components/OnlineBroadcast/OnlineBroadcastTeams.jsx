@@ -50,7 +50,7 @@ const OnlineBroadcastTeams = () => {
         </div>
 
         <iframe
-          src="https://vk.com/video_ext.php?oid=-228510684&id=456239030&hd=2"
+          src="https://vkvideo.ru/video_ext.php?oid=-228510684&id=456239280&autoplay=1"
           width={widthForVideo}
           height={height}
           allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
