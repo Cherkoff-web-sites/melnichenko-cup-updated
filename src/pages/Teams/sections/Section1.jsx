@@ -12,32 +12,32 @@ const Section1 = () => {
     {
       groupName: "ГРУППА А",
       teams: [
-        { position: "1", team: "ЕвроХим-УКК", wins: "3", draws: "0", losses: "0", goalDiff: "6", points: "9"},
-        { position: "2", team: "Ковдорский ГОК", wins: "2", draws: "1", losses: "0", goalDiff: "9", points: "8"},
-        { position: "3", team: "ЕвроХим-Казахстан", wins: "1", draws: "0", losses: "2", goalDiff: "-4", points: "3"},
-        { position: "4", team: "СГК Новосибирск", wins: "0", draws: "1", losses: "2", goalDiff: "-3", points: "1"},
-        { position: "5", team: "АИМ и ЦТИП", wins: "0", draws: "0", losses: "3", goalDiff: "-8", points: "0"}
+        { position: "1", team: "ЕвроХим-УКК", wins: "4", draws: "0", losses: "0", goalDiff: "6", points: "11"},
+        { position: "2", team: "Ковдорский ГОК", wins: "3", draws: "1", losses: "0", goalDiff: "9", points: "9"},
+        { position: "3", team: "ЕвроХим-Казахстан", wins: "2", draws: "0", losses: "2", goalDiff: "-1", points: "6"},
+        { position: "4", team: "СГК Новосибирск", wins: "1", draws: "1", losses: "2", goalDiff: "2", points: "4"},
+        { position: "5", team: "АИМ и ЦТИП", wins: "0", draws: "0", losses: "4", goalDiff: "-16", points: "0"}
       ]
     },
     {
       groupName: "ГРУППА Б",
       teams: [
-        { position: "1", team: "НАК Азот", wins: "3", draws: "0", losses: "0", goalDiff: "8", points: "9"},
-        { position: "2", team: "СУЭК- Кузбасс", wins: "2", draws: "0", losses: "1", goalDiff: "5", points: "6"},
-        { position: "3", team: "СУЭК- Красноярск", wins: "1", draws: "0", losses: "2", goalDiff: "-1", points: "3"},
-        { position: "4", team: "СГК- Кузбасс", wins: "1", draws: "0", losses: "2", goalDiff: "-2", points: "3"},
-        { position: "5", team: "Невинномысский Азот", wins: "0", draws: "0", losses: "3", goalDiff: "-10", points: "0"}
+        { position: "1", team: "НАК Азот", wins: "3", draws: "0", losses: "0", goalDiff: "9", points: "12"},
+        { position: "2", team: "СУЭК- Кузбасс", wins: "2", draws: "0", losses: "1", goalDiff: "4", points: "7"},
+        { position: "3", team: "СГК- Кузбасс", wins: "1", draws: "0", losses: "2", goalDiff: "-2", points: "5"},
+        { position: "4", team: "СУЭК- Красноярск", wins: "1", draws: "0", losses: "2", goalDiff: "-1", points: "4"},
+        { position: "5", team: "Невинномысский Азот", wins: "0", draws: "0", losses: "3", goalDiff: "-10", points: "2"}
       ]
     }
   ]
 
   // Данные для таблицы "Лучшие бомбардиры"
   const topScorers = [
-    { player: "№10 Галактионов Андрей", team: "", goals: "4" },
-    { player: "№11 Жаксылыков Адилет", team: "", goals: "3" },
-    { player: "№10 Козяков Никита", team: "", goals: "3" },
-    { player: "№8 Кусакин Иван", team: "", goals: "3" },
-    // { player: "", team: "", goals: "" }
+    { player: "Галактионов Андрей", team: "Ковдорский ГОК", goals: "7" },
+    { player: "Зембра Артём", team: "НАК АЗОТ", goals: "6" },
+    { player: "Бузников Роман", team: "Ковдорский ГОК", goals: "5" },
+    { player: "Ганев Кирилл", team: "НАК АЗОТ", goals: "4" },
+    { player: "Жаксылыков Адилет", team: "Еврохим Казахстан", goals: "5" }
   ]
 
   // Данные для расписания по полям
@@ -103,23 +103,23 @@ const Section1 = () => {
         {
           className: "",
           teams: [
-            { name: "", marginClass: "mb-[2px]" },
-            { name: "", marginClass: "mb-[10px] md:mb-[30px]" },
-            { name: "", marginClass: "mb-[2px]" },
-            { name: "", marginClass: "" }
+            { name: "Еврохим УКК", marginClass: "mb-[2px]" },
+            { name: "СУЭК Красноярск", marginClass: "mb-[10px] md:mb-[30px]" },
+            { name: "СГК Новосибирск", marginClass: "mb-[2px]" },
+            { name: "НАК Азот", marginClass: "" }
           ]
         },
         {
           className: "space-y-[2px] flex flex-col justify-center items-center",
           teams: [
-            { name: "", marginClass: "" },
-            { name: "", marginClass: "" }
+            { name: "СУЭК Красноярск", marginClass: "" },
+            { name: "НАК Азот", marginClass: "" }
           ]
         },
         {
           className: "space-y-[2px] flex flex-col justify-end items-end",
           teams: [
-            { name: "", marginClass: "relative bottom-[-4px] md:bottom-[-14px]" }
+            { name: "СУЭК Красноярск", marginClass: "relative bottom-[-4px] md:bottom-[-14px]" }
           ]
         }
       ]
@@ -129,23 +129,23 @@ const Section1 = () => {
         {
           className: "",
           teams: [
-            { name: "", marginClass: "mb-[2px]" },
-            { name: "", marginClass: "mb-[10px] md:mb-[30px]" },
-            { name: "", marginClass: "mb-[2px]" },
-            { name: "", marginClass: "" }
+            { name: "Ковдорский ГОК", marginClass: "mb-[2px]" },
+            { name: "СГК Кузбасс", marginClass: "mb-[10px] md:mb-[30px]" },
+            { name: "Еврохим Казахстан", marginClass: "mb-[2px]" },
+            { name: "СУЭК Кузбасс", marginClass: "" }
           ]
         },
         {
           className: "space-y-[2px] flex flex-col justify-center items-center",
           teams: [
-            { name: "", marginClass: "" },
-            { name: "", marginClass: "" }
+            { name: "Ковдорский ГОК", marginClass: "" },
+            { name: "Еврохим Казахстан", marginClass: "" }
           ]
         },
         {
           className: "space-y-[2px] flex flex-col justify-start items-end",
           teams: [
-            { name: "", marginClass: "relative top-[-4px] md:top-[-14px]" }
+            { name: "Ковдорский ГОК", marginClass: "relative top-[-4px] md:top-[-14px]" }
           ]
         }
       ]
